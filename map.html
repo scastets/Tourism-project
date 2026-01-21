@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1b27b9c4d23075bb323c079444f73ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1b27b9c4d23075bb323c079444f73ad" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1b27b9c4d23075bb323c079444f73ad = L.map(
+                "map_f1b27b9c4d23075bb323c079444f73ad",
+                {
+                    center: [48.8589787, 2.3242546],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f7b86d2d4f6bf092088c607ab30a712 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6f7b86d2d4f6bf092088c607ab30a712.addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var marker_8099e93e360621d3c88ee067bbac7f63 = L.marker(
+                [48.8589787, 2.3242546],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_9b32693e7db7e6bd9033a99891523b39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8406aa3dd465c01d6cdf175546344f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d0db4e8008ed329499694823b290ef4 = $(`<div id="html_5d0db4e8008ed329499694823b290ef4" style="width: 100.0%; height: 100.0%;">Maison</div>`)[0];
+                popup_d8406aa3dd465c01d6cdf175546344f8.setContent(html_5d0db4e8008ed329499694823b290ef4);
+            
+        
+
+        marker_8099e93e360621d3c88ee067bbac7f63.bindPopup(popup_d8406aa3dd465c01d6cdf175546344f8)
+        ;
+
+        
+    
+    
+                marker_8099e93e360621d3c88ee067bbac7f63.setIcon(icon_9b32693e7db7e6bd9033a99891523b39);
+            
+    
+            var marker_c7635a6b44d2186f49018763c5765c71 = L.marker(
+                [48.86486074362772, 2.3046092778933756],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_3da7f2d32ca0add37eca07286ccc1b55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "briefcase",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e6a01dfd07a8234ec3fb35b641b49ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69469f2708c046abd4860fe3e939f3ee = $(`<div id="html_69469f2708c046abd4860fe3e939f3ee" style="width: 100.0%; height: 100.0%;">Travail</div>`)[0];
+                popup_2e6a01dfd07a8234ec3fb35b641b49ff.setContent(html_69469f2708c046abd4860fe3e939f3ee);
+            
+        
+
+        marker_c7635a6b44d2186f49018763c5765c71.bindPopup(popup_2e6a01dfd07a8234ec3fb35b641b49ff)
+        ;
+
+        
+    
+    
+                marker_c7635a6b44d2186f49018763c5765c71.setIcon(icon_3da7f2d32ca0add37eca07286ccc1b55);
+            
+    
+        function geo_json_90d6884befa347fae4d07008b7818133_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "darkgreen", "fillColor": "green", "fillOpacity": 0.3, "weight": 3};
+            }
+        }
+
+        function geo_json_90d6884befa347fae4d07008b7818133_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_90d6884befa347fae4d07008b7818133 = L.geoJson(null, {
+                onEachFeature: geo_json_90d6884befa347fae4d07008b7818133_onEachFeature,
+            
+                style: geo_json_90d6884befa347fae4d07008b7818133_styler,
+            ...{
+}
+        });
+
+        function geo_json_90d6884befa347fae4d07008b7818133_add (data) {
+            geo_json_90d6884befa347fae4d07008b7818133
+                .addData(data);
+        }
+            geo_json_90d6884befa347fae4d07008b7818133_add({"bbox": [2.2898239, 48.8484175, 2.333288, 48.8737794], "features": [{"bbox": [2.3190153, 48.8484175, 2.333288, 48.8614751], "geometry": {"coordinates": [[[2.3190314, 48.8516952], [2.3190173, 48.8517398], [2.3190153, 48.8517512], [2.3191035, 48.8527541], [2.3192185, 48.8530531], [2.319238, 48.8531074], [2.3193602, 48.8534179], [2.3193948, 48.8535081], [2.319647, 48.8541658], [2.3196642, 48.8542104], [2.3198464, 48.8546818], [2.319927, 48.8548894], [2.3199335, 48.8549063], [2.3199504, 48.8549493], [2.3199788, 48.8550003], [2.3210501, 48.8563864], [2.321064, 48.8564043], [2.3211157, 48.8564712], [2.3216432, 48.8570043], [2.3220062, 48.8573711], [2.3221736, 48.8575342], [2.3227975, 48.8581579], [2.3228416, 48.8582026], [2.3230383, 48.8584155], [2.3230806, 48.8584611], [2.3231288, 48.8585097], [2.3231668, 48.8585497], [2.3232224, 48.8586079], [2.3238, 48.8592128], [2.3245743, 48.8600394], [2.3261078, 48.8614751], [2.3271476, 48.861119], [2.3283301, 48.8607299], [2.3295034, 48.8602613], [2.3298154, 48.8601611], [2.3300277, 48.8600988], [2.3317526, 48.8596495], [2.3326977, 48.8593987], [2.3329086, 48.8593502], [2.3325996, 48.8588305], [2.3324244, 48.8585113], [2.3327815, 48.8584042], [2.333288, 48.8582442], [2.3327606, 48.857618], [2.3322883, 48.8570506], [2.3322814, 48.8570404], [2.3319232, 48.8565964], [2.3317393, 48.8563751], [2.3317083, 48.8563454], [2.3316724, 48.8563054], [2.3312157, 48.8557209], [2.3307697, 48.8551045], [2.3307078, 48.8549694], [2.3305444, 48.8545947], [2.3305227, 48.8545516], [2.3304829, 48.854471], [2.3303828, 48.8543499], [2.3303635, 48.8543224], [2.3301906, 48.8540334], [2.3298383, 48.8534609], [2.3293603, 48.8526521], [2.3293035, 48.8525998], [2.3286404, 48.8520178], [2.3286293, 48.8519884], [2.3286256, 48.851949], [2.3286248, 48.8518682], [2.3284807, 48.8518431], [2.3278847, 48.8517393], [2.3272655, 48.851641], [2.3268652, 48.8514065], [2.3266562, 48.8512626], [2.3252941, 48.8506953], [2.3247053, 48.8504593], [2.3245821, 48.8504055], [2.3242828, 48.8502783], [2.3241293, 48.8502123], [2.3232835, 48.8498058], [2.3228019, 48.8495692], [2.3220499, 48.8491838], [2.3205533, 48.8484175], [2.3205421, 48.8484202], [2.3205166, 48.8485039], [2.3195751, 48.8505261], [2.3190548, 48.8516462], [2.3190314, 48.8516952]]], "type": "Polygon"}, "id": "(\u0027relation\u0027, 2188567)", "properties": {"addr:postcode": "75007", "admin_level": "10", "alt_name": null, "border_type": null, "boundary": "administrative", "cycleway:both": null, "cycleway:left": null, "cycleway:left:lane": null, "cycleway:left:oneway": null, "cycleway:right": null, "highway": null, "lit": null, "maxspeed": null, "name": "Quartier Saint-Thomas-d\u0027Aquin", "name:el": null, "name:zh": "\u5723\u6258\u9a6c\u65af\u00b7\u8fbe\u594e\u56e0\u8857\u533a", "oneway": null, "oneway:bicycle": null, "parking:both": null, "parking:both:orientation": null, "parking:lane:both": null, "parking:lane:both:parallel": null, "postal_code": null, "ref:TRIRIS": "7510725", "short_name": "St-Thomas-d\u0027Aquin", "sidewalk:both": null, "sidewalk:both:surface": null, "sidewalk:left": null, "sidewalk:right": null, "smoothness": null, "source": null, "source:maxspeed": null, "source:width": null, "surface": null, "type": "boundary", "width": null, "wikidata": "Q3413129", "wikipedia": "fr:Quartier Saint-Thomas-d\u0027Aquin", "zone:maxspeed": null}, "type": "Feature"}, {"bbox": [2.2898239, 48.8511732, 2.3104188, 48.8636266], "geometry": {"coordinates": [[[2.2898239, 48.8582294], [2.2917491, 48.8597873], [2.2919299, 48.8599138], [2.292209, 48.8601136], [2.2926225, 48.8603924], [2.2941941, 48.861522], [2.2951572, 48.8619919], [2.2958216, 48.8622838], [2.2963437, 48.8624958], [2.2967905, 48.8626433], [2.2974348, 48.8628526], [2.297978, 48.8629968], [2.2989348, 48.8632107], [2.2992707, 48.8632726], [2.3001123, 48.8633844], [2.3008726, 48.8634361], [2.3014625, 48.863468], [2.301591, 48.8634737], [2.3020357, 48.8634834], [2.3103819, 48.8636266], [2.3103885, 48.8633997], [2.3104188, 48.8627771], [2.310412, 48.8626486], [2.3103688, 48.8623965], [2.3102595, 48.8611056], [2.3102566, 48.8610339], [2.3101398, 48.8598336], [2.3100141, 48.8581542], [2.3100059, 48.8580672], [2.3099967, 48.8579678], [2.3099945, 48.8579446], [2.3099287, 48.8572593], [2.3099076, 48.8570646], [2.3098601, 48.8566166], [2.3098429, 48.8564471], [2.309782, 48.8560036], [2.3096646, 48.8549686], [2.3095676, 48.8541713], [2.309542, 48.8539546], [2.309409, 48.8539614], [2.309292, 48.8539674], [2.3091645, 48.8539759], [2.3085403, 48.8540057], [2.3064625, 48.8541284], [2.3063067, 48.854161], [2.3055581, 48.8543156], [2.3055009, 48.8543273], [2.3052345, 48.8541276], [2.3051976, 48.8541022], [2.3048155, 48.853842], [2.3046728, 48.8537448], [2.3046468, 48.8537272], [2.3038536, 48.8531863], [2.3036184, 48.8530268], [2.3024595, 48.8522377], [2.3021948, 48.8520574], [2.3016495, 48.8516861], [2.3013679, 48.8515039], [2.3010627, 48.8513024], [2.3009297, 48.8511732], [2.3008024, 48.8512522], [2.3005628, 48.8514029], [2.300367, 48.8515273], [2.3002822, 48.851581], [2.3002308, 48.8516135], [2.2993432, 48.8521822], [2.2991932, 48.8522774], [2.2991267, 48.8523196], [2.2983662, 48.8528028], [2.2982309, 48.8528888], [2.298103, 48.85297], [2.2980462, 48.8530061], [2.2978638, 48.853122], [2.2977514, 48.8531934], [2.2975534, 48.8533192], [2.2973826, 48.8534277], [2.2972934, 48.8534843], [2.2969549, 48.8536994], [2.2968808, 48.8537465], [2.2966381, 48.8539006], [2.295886, 48.8543785], [2.2958524, 48.8543998], [2.2957652, 48.8544552], [2.2953648, 48.8547095], [2.295146, 48.8548485], [2.2931026, 48.856161], [2.2929679, 48.8562468], [2.292933, 48.8562691], [2.2920891, 48.8567975], [2.2912624, 48.8573166], [2.2909874, 48.8574919], [2.2898239, 48.8582294]]], "type": "Polygon"}, "id": "(\u0027relation\u0027, 2188569)", "properties": {"addr:postcode": "75007", "admin_level": "10", "alt_name": null, "border_type": null, "boundary": "administrative", "cycleway:both": null, "cycleway:left": null, "cycleway:left:lane": null, "cycleway:left:oneway": null, "cycleway:right": null, "highway": null, "lit": null, "maxspeed": null, "name": "Quartier du Gros-Caillou", "name:el": null, "name:zh": "\u683c\u7f57\u65af\u5361\u5c24\u8857\u533a", "oneway": null, "oneway:bicycle": null, "parking:both": null, "parking:both:orientation": null, "parking:lane:both": null, "parking:lane:both:parallel": null, "postal_code": null, "ref:TRIRIS": "7510728", "short_name": "Gros-Caillou", "sidewalk:both": null, "sidewalk:both:surface": null, "sidewalk:left": null, "sidewalk:right": null, "smoothness": null, "source": null, "source:maxspeed": null, "source:width": null, "surface": null, "type": "boundary", "width": null, "wikidata": "Q3413275", "wikipedia": "fr:Quartier du Gros-Caillou", "zone:maxspeed": null}, "type": "Feature"}, {"bbox": [2.309542, 48.8516867, 2.3261078, 48.8637782], "geometry": {"coordinates": [[[2.309542, 48.8539546], [2.3095676, 48.8541713], [2.3096646, 48.8549686], [2.309782, 48.8560036], [2.3098429, 48.8564471], [2.3098601, 48.8566166], [2.3099076, 48.8570646], [2.3099287, 48.8572593], [2.3099945, 48.8579446], [2.3099967, 48.8579678], [2.3100059, 48.8580672], [2.3100141, 48.8581542], [2.3101398, 48.8598336], [2.3102566, 48.8610339], [2.3102595, 48.8611056], [2.3103688, 48.8623965], [2.310412, 48.8626486], [2.3104188, 48.8627771], [2.3103885, 48.8633997], [2.3103819, 48.8636266], [2.3157437, 48.8637202], [2.318543, 48.8637782], [2.3187331, 48.8637507], [2.3194233, 48.8635268], [2.319869, 48.8633851], [2.3209018, 48.8630569], [2.3232954, 48.8623245], [2.3251205, 48.8617651], [2.3261078, 48.8614751], [2.3245743, 48.8600394], [2.3238, 48.8592128], [2.3232224, 48.8586079], [2.3231668, 48.8585497], [2.3231288, 48.8585097], [2.3230806, 48.8584611], [2.3230383, 48.8584155], [2.3228416, 48.8582026], [2.3227975, 48.8581579], [2.3221736, 48.8575342], [2.3220062, 48.8573711], [2.3216432, 48.8570043], [2.3211157, 48.8564712], [2.321064, 48.8564043], [2.3210501, 48.8563864], [2.3199788, 48.8550003], [2.3199504, 48.8549493], [2.3199335, 48.8549063], [2.319927, 48.8548894], [2.3198464, 48.8546818], [2.3196642, 48.8542104], [2.319647, 48.8541658], [2.3193948, 48.8535081], [2.3193602, 48.8534179], [2.319238, 48.8531074], [2.3192185, 48.8530531], [2.3191035, 48.8527541], [2.3190153, 48.8517512], [2.3190173, 48.8517398], [2.3190314, 48.8516952], [2.3190241, 48.8516867], [2.3145341, 48.8518409], [2.3146632, 48.8529882], [2.3147202, 48.8534702], [2.3147427, 48.8536961], [2.3122236, 48.8538274], [2.3112341, 48.8538738], [2.3103016, 48.8539193], [2.3095496, 48.8539588], [2.309542, 48.8539546]]], "type": "Polygon"}, "id": "(\u0027relation\u0027, 2188593)", "properties": {"addr:postcode": null, "admin_level": "10", "alt_name": null, "border_type": null, "boundary": "administrative", "cycleway:both": null, "cycleway:left": null, "cycleway:left:lane": null, "cycleway:left:oneway": null, "cycleway:right": null, "highway": null, "lit": null, "maxspeed": null, "name": "Quartier des Invalides", "name:el": null, "name:zh": "\u8363\u519b\u9662\u8857\u533a", "oneway": null, "oneway:bicycle": null, "parking:both": null, "parking:both:orientation": null, "parking:lane:both": null, "parking:lane:both:parallel": null, "postal_code": "75007", "ref:TRIRIS": "7510726", "short_name": "Invalides", "sidewalk:both": null, "sidewalk:both:surface": null, "sidewalk:left": null, "sidewalk:right": null, "smoothness": null, "source": null, "source:maxspeed": null, "source:width": null, "surface": null, "type": "boundary", "width": null, "wikidata": "Q3413242", "wikipedia": "fr:Quartier des Invalides", "zone:maxspeed": null}, "type": "Feature"}, {"bbox": [2.2950398, 48.8630569, 2.3233251, 48.8737794], "geometry": {"coordinates": [[[2.2950398, 48.8737794], [2.2960625, 48.873452], [2.2968799, 48.8731923], [2.2969122, 48.873183], [2.2970404, 48.8731413], [2.2970824, 48.873128], [2.2992799, 48.8724299], [2.3003329, 48.8720958], [2.3003847, 48.872079], [2.3004567, 48.8720562], [2.3009215, 48.8719084], [2.3010408, 48.8718733], [2.3011326, 48.8718414], [2.3024426, 48.8714263], [2.3025722, 48.8713841], [2.3028005, 48.8713116], [2.3052869, 48.8705337], [2.306474, 48.8701489], [2.3076698, 48.8697647], [2.3101121, 48.8689747], [2.3118324, 48.8698758], [2.3119315, 48.8699287], [2.3121276, 48.8698684], [2.3134089, 48.8694669], [2.314641, 48.869075], [2.3147623, 48.8690367], [2.3146312, 48.8688484], [2.3147228, 48.8687194], [2.3147423, 48.8686951], [2.3147866, 48.8686399], [2.3148438, 48.8685809], [2.3149137, 48.8685124], [2.3150086, 48.8684482], [2.3151053, 48.8683992], [2.3151765, 48.8683756], [2.3152061, 48.8683667], [2.3153255, 48.8683398], [2.3154699, 48.8683214], [2.3155145, 48.8683206], [2.3158335, 48.8683181], [2.3161154, 48.868328], [2.3163136, 48.8683499], [2.3164096, 48.8683559], [2.316464, 48.8683521], [2.3165248, 48.868336], [2.3182957, 48.8677759], [2.3182971, 48.8677755], [2.3192561, 48.8674705], [2.3233251, 48.8661764], [2.3227209, 48.8653912], [2.3225496, 48.8651726], [2.3224898, 48.8650941], [2.3224575, 48.8650518], [2.3224394, 48.8650284], [2.3223639, 48.8649306], [2.3223501, 48.8649134], [2.322114, 48.8646092], [2.3216294, 48.8639896], [2.3215732, 48.8639178], [2.3212838, 48.8635371], [2.3209018, 48.8630569], [2.319869, 48.8633851], [2.3194233, 48.8635268], [2.3187331, 48.8637507], [2.318543, 48.8637782], [2.3157437, 48.8637202], [2.3103819, 48.8636266], [2.3020357, 48.8634834], [2.301591, 48.8634737], [2.3015172, 48.8645256], [2.3004794, 48.8649456], [2.3001991, 48.8650591], [2.2998989, 48.8653261], [2.2997777, 48.8657185], [2.2996651, 48.8660538], [2.2995343, 48.866508], [2.2994965, 48.8666391], [2.2994644, 48.8667434], [2.2993923, 48.8669805], [2.2992958, 48.8672948], [2.2992808, 48.8673436], [2.2992472, 48.8674536], [2.2992129, 48.8675665], [2.2991438, 48.8677941], [2.2991419, 48.8678003], [2.2989844, 48.8683193], [2.2989165, 48.8685303], [2.2988541, 48.8686364], [2.2988189, 48.8686965], [2.2983427, 48.8695252], [2.2982388, 48.8696936], [2.2981863, 48.8697822], [2.2980237, 48.8700591], [2.2977179, 48.8705736], [2.297591, 48.8707928], [2.2975047, 48.8709454], [2.2961694, 48.8724825], [2.2950398, 48.8737794]]], "type": "Polygon"}, "id": "(\u0027relation\u0027, 2188686)", "properties": {"addr:postcode": null, "admin_level": "10", "alt_name": null, "border_type": null, "boundary": "administrative", "cycleway:both": null, "cycleway:left": null, "cycleway:left:lane": null, "cycleway:left:oneway": null, "cycleway:right": null, "highway": null, "lit": null, "maxspeed": null, "name": "Quartier des Champs-\u00c9lys\u00e9es", "name:el": null, "name:zh": "\u9999\u69ad\u4e3d\u820d\u8857\u533a", "oneway": null, "oneway:bicycle": null, "parking:both": null, "parking:both:orientation": null, "parking:lane:both": null, "parking:lane:both:parallel": null, "postal_code": "75008", "ref:TRIRIS": "7510829", "short_name": "Champs-\u00c9lys\u00e9es", "sidewalk:both": null, "sidewalk:both:surface": null, "sidewalk:left": null, "sidewalk:right": null, "smoothness": null, "source": null, "source:maxspeed": null, "source:width": null, "surface": null, "type": "boundary", "width": null, "wikidata": "Q3413229", "wikipedia": "fr:Quartier des Champs-\u00c9lys\u00e9es", "zone:maxspeed": null}, "type": "Feature"}, {"bbox": [2.3190153, 48.8516952, 2.3261078, 48.8614751], "geometry": {"coordinates": [[2.3261078, 48.8614751], [2.3245743, 48.8600394], [2.3238, 48.8592128], [2.3232224, 48.8586079], [2.3231668, 48.8585497], [2.3231288, 48.8585097], [2.3230806, 48.8584611], [2.3230383, 48.8584155], [2.3228416, 48.8582026], [2.3227975, 48.8581579], [2.3221736, 48.8575342], [2.3220062, 48.8573711], [2.3216432, 48.8570043], [2.3211157, 48.8564712], [2.321064, 48.8564043], [2.3210501, 48.8563864], [2.3199788, 48.8550003], [2.3199504, 48.8549493], [2.3199335, 48.8549063], [2.319927, 48.8548894], [2.3198464, 48.8546818], [2.3196642, 48.8542104], [2.319647, 48.8541658], [2.3193948, 48.8535081], [2.3193602, 48.8534179], [2.319238, 48.8531074], [2.3192185, 48.8530531], [2.3191035, 48.8527541], [2.3190153, 48.8517512], [2.3190173, 48.8517398], [2.3190314, 48.8516952]], "type": "LineString"}, "id": "(\u0027way\u0027, 164034914)", "properties": {"addr:postcode": null, "admin_level": "10", "alt_name": null, "border_type": null, "boundary": "administrative", "cycleway:both": null, "cycleway:left": null, "cycleway:left:lane": null, "cycleway:left:oneway": null, "cycleway:right": null, "highway": null, "lit": null, "maxspeed": null, "name": null, "name:el": null, "name:zh": null, "oneway": null, "oneway:bicycle": null, "parking:both": null, "parking:both:orientation": null, "parking:lane:both": null, "parking:lane:both:parallel": null, "postal_code": null, "ref:TRIRIS": null, "short_name": null, "sidewalk:both": null, "sidewalk:both:surface": null, "sidewalk:left": null, "sidewalk:right": null, "smoothness": null, "source": "cadastre-dgi-fr source : Direction G\u00e9n\u00e9rale des Imp\u00f4ts - Cadastre. Mise \u00e0 jour : 2012", "source:maxspeed": null, "source:width": null, "surface": null, "type": null, "width": null, "wikidata": null, "wikipedia": null, "zone:maxspeed": null}, "type": "Feature"}, {"bbox": [2.309542, 48.8539546, 2.3104188, 48.8636266], "geometry": {"coordinates": [[2.3103819, 48.8636266], [2.3103885, 48.8633997], [2.3104188, 48.8627771], [2.310412, 48.8626486], [2.3103688, 48.8623965], [2.3102595, 48.8611056], [2.3102566, 48.8610339], [2.3101398, 48.8598336], [2.3100141, 48.8581542], [2.3100059, 48.8580672], [2.3099967, 48.8579678], [2.3099945, 48.8579446], [2.3099287, 48.8572593], [2.3099076, 48.8570646], [2.3098601, 48.8566166], [2.3098429, 48.8564471], [2.309782, 48.8560036], [2.3096646, 48.8549686], [2.3095676, 48.8541713], [2.309542, 48.8539546]], "type": "LineString"}, "id": "(\u0027way\u0027, 164036521)", "properties": {"addr:postcode": null, "admin_level": "10", "alt_name": null, "border_type": null, "boundary": "administrative", "cycleway:both": null, "cycleway:left": null, "cycleway:left:lane": null, "cycleway:left:oneway": null, "cycleway:right": null, "highway": null, "lit": null, "maxspeed": null, "name": null, "name:el": null, "name:zh": null, "oneway": null, "oneway:bicycle": null, "parking:both": null, "parking:both:orientation": null, "parking:lane:both": null, "parking:lane:both:parallel": null, "postal_code": null, "ref:TRIRIS": null, "short_name": null, "sidewalk:both": null, "sidewalk:both:surface": null, "sidewalk:left": null, "sidewalk:right": null, "smoothness": null, "source": "cadastre-dgi-fr source : Direction G\u00e9n\u00e9rale des Imp\u00f4ts - Cadastre. Mise \u00e0 jour : 2012", "source:maxspeed": null, "source:width": null, "surface": null, "type": null, "width": null, "wikidata": null, "wikipedia": null, "zone:maxspeed": null}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_90d6884befa347fae4d07008b7818133.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["short_name"];
+    let aliases = ["short_name"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_90d6884befa347fae4d07008b7818133.addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var poly_line_913a88dd34f3dbcbe356ced17c6af897 = L.polyline(
+                [[48.8592118, 2.3237994], [48.8595094, 2.3230018], [48.8599923, 2.3217179], [48.860045, 2.3215881], [48.8606503, 2.3199922], [48.8607434, 2.3187995], [48.8607992, 2.3179989], [48.8609738, 2.3149474], [48.8610518, 2.3132382], [48.8611194, 2.311494], [48.8611198, 2.3102809], [48.8625754, 2.3104189], [48.8646107, 2.3103421], [48.864911, 2.3103202], [48.8649054, 2.3100286], [48.8648647, 2.3079259], [48.8648196, 2.3055942], [48.8647723, 2.3041867]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var marker_2ab2c1970be89032af42d55c73026807 = L.marker(
+                [48.84879, 2.3210687],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_9b6ddae22c93c93dd0ab244d57c446ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e064bc4aa157269af317626772180a54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33f3389f66f55425db4234c8f9a61524 = $(`<div id="html_33f3389f66f55425db4234c8f9a61524" style="width: 100.0%; height: 100.0%;">Fontaine du Fellah</div>`)[0];
+                popup_e064bc4aa157269af317626772180a54.setContent(html_33f3389f66f55425db4234c8f9a61524);
+            
+        
+
+        marker_2ab2c1970be89032af42d55c73026807.bindPopup(popup_e064bc4aa157269af317626772180a54)
+        ;
+
+        
+    
+    
+                marker_2ab2c1970be89032af42d55c73026807.setIcon(icon_9b6ddae22c93c93dd0ab244d57c446ca);
+            
+    
+            var marker_b3c582cf9c20fe6a89e3ec9843ed4d5a = L.marker(
+                [48.8507094, 2.3232128],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_b141a3d3ebb8fd1d622d6de469713bd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9745b338e5b7a5ef5a54b1f5f7a0a205 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_414cf5b8d8c89878271e5e829f7aa856 = $(`<div id="html_414cf5b8d8c89878271e5e829f7aa856" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+                popup_9745b338e5b7a5ef5a54b1f5f7a0a205.setContent(html_414cf5b8d8c89878271e5e829f7aa856);
+            
+        
+
+        marker_b3c582cf9c20fe6a89e3ec9843ed4d5a.bindPopup(popup_9745b338e5b7a5ef5a54b1f5f7a0a205)
+        ;
+
+        
+    
+    
+                marker_b3c582cf9c20fe6a89e3ec9843ed4d5a.setIcon(icon_b141a3d3ebb8fd1d622d6de469713bd9);
+            
+    
+            var marker_88fb2dbafc39a6379dc88a0fcf11fe9a = L.marker(
+                [48.8544952, 2.3255993],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_8757c3e076add8058246b0641dccb64f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71891e739b9e67caca9bdcd4d9697104 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3d438960b1a2918bca6fc50da7cb058 = $(`<div id="html_c3d438960b1a2918bca6fc50da7cb058" style="width: 100.0%; height: 100.0%;">Barthélémy</div>`)[0];
+                popup_71891e739b9e67caca9bdcd4d9697104.setContent(html_c3d438960b1a2918bca6fc50da7cb058);
+            
+        
+
+        marker_88fb2dbafc39a6379dc88a0fcf11fe9a.bindPopup(popup_71891e739b9e67caca9bdcd4d9697104)
+        ;
+
+        
+    
+    
+                marker_88fb2dbafc39a6379dc88a0fcf11fe9a.setIcon(icon_8757c3e076add8058246b0641dccb64f);
+            
+    
+            var marker_85810f4452562988302befb378f9b313 = L.marker(
+                [48.85108399819433, 2.3205217019025994],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_529dcc1b0a1d4aaf37abe111d89c096d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f077913aad03b618ec94b76a6662d15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea79942abcc56757cc457c664c02d3d5 = $(`<div id="html_ea79942abcc56757cc457c664c02d3d5" style="width: 100.0%; height: 100.0%;">Jardin Catherine Labouré</div>`)[0];
+                popup_3f077913aad03b618ec94b76a6662d15.setContent(html_ea79942abcc56757cc457c664c02d3d5);
+            
+        
+
+        marker_85810f4452562988302befb378f9b313.bindPopup(popup_3f077913aad03b618ec94b76a6662d15)
+        ;
+
+        
+    
+    
+                marker_85810f4452562988302befb378f9b313.setIcon(icon_529dcc1b0a1d4aaf37abe111d89c096d);
+            
+    
+            var marker_436e246623d3d0cd8128ad1310532c8a = L.marker(
+                [48.8588633, 2.2918544],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_0cad884878cf0c91e03049a319148cb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47cedd4083e943ccdec6e2a04a671855 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a489467b5e9cd603d8a715e6e2277794 = $(`<div id="html_a489467b5e9cd603d8a715e6e2277794" style="width: 100.0%; height: 100.0%;">Vedettes de Paris</div>`)[0];
+                popup_47cedd4083e943ccdec6e2a04a671855.setContent(html_a489467b5e9cd603d8a715e6e2277794);
+            
+        
+
+        marker_436e246623d3d0cd8128ad1310532c8a.bindPopup(popup_47cedd4083e943ccdec6e2a04a671855)
+        ;
+
+        
+    
+    
+                marker_436e246623d3d0cd8128ad1310532c8a.setIcon(icon_0cad884878cf0c91e03049a319148cb7);
+            
+    
+            var marker_8f9e72f0dce11f2ebff42d523e016797 = L.marker(
+                [48.8582685, 2.2945812],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_b2a311710380503691131b7ca432e686 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5c71f7dba901214a93921880ac3a6e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9af3b0b65ad2641f66e57866a25e4a7a = $(`<div id="html_9af3b0b65ad2641f66e57866a25e4a7a" style="width: 100.0%; height: 100.0%;">Bureau de Gustave Eiffel</div>`)[0];
+                popup_f5c71f7dba901214a93921880ac3a6e3.setContent(html_9af3b0b65ad2641f66e57866a25e4a7a);
+            
+        
+
+        marker_8f9e72f0dce11f2ebff42d523e016797.bindPopup(popup_f5c71f7dba901214a93921880ac3a6e3)
+        ;
+
+        
+    
+    
+                marker_8f9e72f0dce11f2ebff42d523e016797.setIcon(icon_b2a311710380503691131b7ca432e686);
+            
+    
+            var marker_3a1e27a03d7b5c1391f8d27e60682338 = L.marker(
+                [48.8579648, 2.2993451],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_368cae3f07947e6a5f87587a309d4462 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cd1ace4c479e2ca4dfbd0636a9915c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c09f81e8fb8662626b063d1c38b6867 = $(`<div id="html_3c09f81e8fb8662626b063d1c38b6867" style="width: 100.0%; height: 100.0%;">History Group Store</div>`)[0];
+                popup_3cd1ace4c479e2ca4dfbd0636a9915c5.setContent(html_3c09f81e8fb8662626b063d1c38b6867);
+            
+        
+
+        marker_3a1e27a03d7b5c1391f8d27e60682338.bindPopup(popup_3cd1ace4c479e2ca4dfbd0636a9915c5)
+        ;
+
+        
+    
+    
+                marker_3a1e27a03d7b5c1391f8d27e60682338.setIcon(icon_368cae3f07947e6a5f87587a309d4462);
+            
+    
+            var marker_82f489eeed91c256c7e504391697a7ae = L.marker(
+                [48.85604515674459, 2.2979241210628705],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_357a47a99a1e2b2509bbc1e2ad988201 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f119ed5e2d7bf97d5964120f00e061d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5d7230bdbaf06eefc1ce0b5e572293f = $(`<div id="html_d5d7230bdbaf06eefc1ce0b5e572293f" style="width: 100.0%; height: 100.0%;">Champ de Mars</div>`)[0];
+                popup_f119ed5e2d7bf97d5964120f00e061d8.setContent(html_d5d7230bdbaf06eefc1ce0b5e572293f);
+            
+        
+
+        marker_82f489eeed91c256c7e504391697a7ae.bindPopup(popup_f119ed5e2d7bf97d5964120f00e061d8)
+        ;
+
+        
+    
+    
+                marker_82f489eeed91c256c7e504391697a7ae.setIcon(icon_357a47a99a1e2b2509bbc1e2ad988201);
+            
+    
+            var marker_01ab723556eb8f83bd59a61f5e683c68 = L.marker(
+                [48.85826203697695, 2.294496149430155],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_95578b833488397100d827fe0fba42af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a12677c149a28e976a5d3e40877e925e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8fe94bbf9e97a1b1602ebea7e72a763 = $(`<div id="html_c8fe94bbf9e97a1b1602ebea7e72a763" style="width: 100.0%; height: 100.0%;">Tour Eiffel</div>`)[0];
+                popup_a12677c149a28e976a5d3e40877e925e.setContent(html_c8fe94bbf9e97a1b1602ebea7e72a763);
+            
+        
+
+        marker_01ab723556eb8f83bd59a61f5e683c68.bindPopup(popup_a12677c149a28e976a5d3e40877e925e)
+        ;
+
+        
+    
+    
+                marker_01ab723556eb8f83bd59a61f5e683c68.setIcon(icon_95578b833488397100d827fe0fba42af);
+            
+    
+            var marker_04bea37677738cf4701ef4a211639932 = L.marker(
+                [48.85892084990797, 2.292622064239707],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_63417dcc144167d2795ff72194f71fbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abff3184f8d1ca9d0abafe6adf7f84fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db4e4ebe80955d48cbe700e929e70df7 = $(`<div id="html_db4e4ebe80955d48cbe700e929e70df7" style="width: 100.0%; height: 100.0%;">Le Carrousel de la Tour Eiffel</div>`)[0];
+                popup_abff3184f8d1ca9d0abafe6adf7f84fc.setContent(html_db4e4ebe80955d48cbe700e929e70df7);
+            
+        
+
+        marker_04bea37677738cf4701ef4a211639932.bindPopup(popup_abff3184f8d1ca9d0abafe6adf7f84fc)
+        ;
+
+        
+    
+    
+                marker_04bea37677738cf4701ef4a211639932.setIcon(icon_63417dcc144167d2795ff72194f71fbd);
+            
+    
+            var marker_100c1de2b3c64f1ea1f5e05929eeb5c6 = L.marker(
+                [48.85842219999999, 2.2947295000000003],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_272118d91b87f7cb27f3b827746919f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a68baadbdf0dc7cb1afde56e80bfd4c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44b435add0afeb0974692339fd3dd240 = $(`<div id="html_44b435add0afeb0974692339fd3dd240" style="width: 100.0%; height: 100.0%;">Pavillon Eiffel</div>`)[0];
+                popup_a68baadbdf0dc7cb1afde56e80bfd4c9.setContent(html_44b435add0afeb0974692339fd3dd240);
+            
+        
+
+        marker_100c1de2b3c64f1ea1f5e05929eeb5c6.bindPopup(popup_a68baadbdf0dc7cb1afde56e80bfd4c9)
+        ;
+
+        
+    
+    
+                marker_100c1de2b3c64f1ea1f5e05929eeb5c6.setIcon(icon_272118d91b87f7cb27f3b827746919f8);
+            
+    
+            var marker_1823ee6a1d859759c3b099fa2fea9b9e = L.marker(
+                [48.85810225000001, 2.29425305],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_285c3a10ded7d01d65be84aee9edf0e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da1e53c103408dbeb1d0bf3b27c11c32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b6a74e0ba01425a5ae918fe4573d8d7 = $(`<div id="html_5b6a74e0ba01425a5ae918fe4573d8d7" style="width: 100.0%; height: 100.0%;">Pavillon Ferrié</div>`)[0];
+                popup_da1e53c103408dbeb1d0bf3b27c11c32.setContent(html_5b6a74e0ba01425a5ae918fe4573d8d7);
+            
+        
+
+        marker_1823ee6a1d859759c3b099fa2fea9b9e.bindPopup(popup_da1e53c103408dbeb1d0bf3b27c11c32)
+        ;
+
+        
+    
+    
+                marker_1823ee6a1d859759c3b099fa2fea9b9e.setIcon(icon_285c3a10ded7d01d65be84aee9edf0e9);
+            
+    
+            var marker_a607fb425529068bb8d7892bfab7c84f = L.marker(
+                [48.855225544086125, 2.3011166896502884],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_cc9f42b0bb0bd5031bbf5152dd97282c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d22aaa663d17ce7041099f01dbf55c80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c39d12893b0d9d6a4859df314e702a89 = $(`<div id="html_c39d12893b0d9d6a4859df314e702a89" style="width: 100.0%; height: 100.0%;">Monument des Droits de l'Homme</div>`)[0];
+                popup_d22aaa663d17ce7041099f01dbf55c80.setContent(html_c39d12893b0d9d6a4859df314e702a89);
+            
+        
+
+        marker_a607fb425529068bb8d7892bfab7c84f.bindPopup(popup_d22aaa663d17ce7041099f01dbf55c80)
+        ;
+
+        
+    
+    
+                marker_a607fb425529068bb8d7892bfab7c84f.setIcon(icon_cc9f42b0bb0bd5031bbf5152dd97282c);
+            
+    
+            var marker_3bd5b1d27c7a65919c27945fa24ac06d = L.marker(
+                [48.85794951441454, 2.293083890902798],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_962a47866de3aefc28f0f5e207138ecc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_548c62ad15b09a8065880148998f6e99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d073cc0e4d0f06123b52ff2f9896b43 = $(`<div id="html_8d073cc0e4d0f06123b52ff2f9896b43" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+                popup_548c62ad15b09a8065880148998f6e99.setContent(html_8d073cc0e4d0f06123b52ff2f9896b43);
+            
+        
+
+        marker_3bd5b1d27c7a65919c27945fa24ac06d.bindPopup(popup_548c62ad15b09a8065880148998f6e99)
+        ;
+
+        
+    
+    
+                marker_3bd5b1d27c7a65919c27945fa24ac06d.setIcon(icon_962a47866de3aefc28f0f5e207138ecc);
+            
+    
+            var marker_cec8539c57ec2f6108dc70743db2d0c3 = L.marker(
+                [48.8617098, 2.3148081],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_ce9d948a7df908977dad2f4572cf8e1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80e2ca6330b7aa1b359aa329df0936ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68f00507a54988be49d549cd728463ad = $(`<div id="html_68f00507a54988be49d549cd728463ad" style="width: 100.0%; height: 100.0%;">PILI RATP</div>`)[0];
+                popup_80e2ca6330b7aa1b359aa329df0936ea.setContent(html_68f00507a54988be49d549cd728463ad);
+            
+        
+
+        marker_cec8539c57ec2f6108dc70743db2d0c3.bindPopup(popup_80e2ca6330b7aa1b359aa329df0936ea)
+        ;
+
+        
+    
+    
+                marker_cec8539c57ec2f6108dc70743db2d0c3.setIcon(icon_ce9d948a7df908977dad2f4572cf8e1b);
+            
+    
+            var marker_bdd8676781d4802d9aee7e3fa610fc9a = L.marker(
+                [48.855027, 2.3125378],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_3b9fe0d3583af1d8f6dc667bcc72cb3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c6b4cf897e74950f801b0014db79f98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_249d93ebc4fa9b66a8aa2cc677f30434 = $(`<div id="html_249d93ebc4fa9b66a8aa2cc677f30434" style="width: 100.0%; height: 100.0%;">Tombeau de Napoleon Ier</div>`)[0];
+                popup_6c6b4cf897e74950f801b0014db79f98.setContent(html_249d93ebc4fa9b66a8aa2cc677f30434);
+            
+        
+
+        marker_bdd8676781d4802d9aee7e3fa610fc9a.bindPopup(popup_6c6b4cf897e74950f801b0014db79f98)
+        ;
+
+        
+    
+    
+                marker_bdd8676781d4802d9aee7e3fa610fc9a.setIcon(icon_3b9fe0d3583af1d8f6dc667bcc72cb3a);
+            
+    
+            var marker_17cd7f69bfac43c3cf06db4ca1534bb4 = L.marker(
+                [48.855917810055075, 2.3126427389763333],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_fa4da7c46191b85a20b84d4824c5cf85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20f436e002b66d1685ea9f7159e47400 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9575cbd00e9524c8260ddf4e3e4d1575 = $(`<div id="html_9575cbd00e9524c8260ddf4e3e4d1575" style="width: 100.0%; height: 100.0%;">Hôtel des Invalides</div>`)[0];
+                popup_20f436e002b66d1685ea9f7159e47400.setContent(html_9575cbd00e9524c8260ddf4e3e4d1575);
+            
+        
+
+        marker_17cd7f69bfac43c3cf06db4ca1534bb4.bindPopup(popup_20f436e002b66d1685ea9f7159e47400)
+        ;
+
+        
+    
+    
+                marker_17cd7f69bfac43c3cf06db4ca1534bb4.setIcon(icon_fa4da7c46191b85a20b84d4824c5cf85);
+            
+    
+            var marker_6cb97a65655bb3d8ed428ee81d818bcd = L.marker(
+                [48.85563864790635, 2.312607823254268],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_2abc9129da3b9d41c763d89f960db769 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42c43c1f47e0e66bea66f8106e8f10c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2a1d61e97dc076a63d777eb418fbacf = $(`<div id="html_a2a1d61e97dc076a63d777eb418fbacf" style="width: 100.0%; height: 100.0%;">Cathédrale Saint-Louis des Invalides</div>`)[0];
+                popup_42c43c1f47e0e66bea66f8106e8f10c5.setContent(html_a2a1d61e97dc076a63d777eb418fbacf);
+            
+        
+
+        marker_6cb97a65655bb3d8ed428ee81d818bcd.bindPopup(popup_42c43c1f47e0e66bea66f8106e8f10c5)
+        ;
+
+        
+    
+    
+                marker_6cb97a65655bb3d8ed428ee81d818bcd.setIcon(icon_2abc9129da3b9d41c763d89f960db769);
+            
+    
+            var marker_9f72e2413173a58948428d77aecbd721 = L.marker(
+                [48.855033872122966, 2.3125389406669585],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_5e00b885735e8df6d1bb41b207bac82c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ccb67443631a1322efe8da614732681 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa0b62853a8dedf5e302ff2f50478108 = $(`<div id="html_aa0b62853a8dedf5e302ff2f50478108" style="width: 100.0%; height: 100.0%;">Église du Dôme</div>`)[0];
+                popup_0ccb67443631a1322efe8da614732681.setContent(html_aa0b62853a8dedf5e302ff2f50478108);
+            
+        
+
+        marker_9f72e2413173a58948428d77aecbd721.bindPopup(popup_0ccb67443631a1322efe8da614732681)
+        ;
+
+        
+    
+    
+                marker_9f72e2413173a58948428d77aecbd721.setIcon(icon_5e00b885735e8df6d1bb41b207bac82c);
+            
+    
+            var marker_464a970fe668424528aba24c6bc8e969 = L.marker(
+                [48.861749297048505, 2.317883781638096],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_12191fb23127592cb024b0b13375ce24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc461c2d1cda30f15c707c3562764176 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_020027f3cc97cc573cf4c6ac28111914 = $(`<div id="html_020027f3cc97cc573cf4c6ac28111914" style="width: 100.0%; height: 100.0%;">Assemblée nationale</div>`)[0];
+                popup_fc461c2d1cda30f15c707c3562764176.setContent(html_020027f3cc97cc573cf4c6ac28111914);
+            
+        
+
+        marker_464a970fe668424528aba24c6bc8e969.bindPopup(popup_fc461c2d1cda30f15c707c3562764176)
+        ;
+
+        
+    
+    
+                marker_464a970fe668424528aba24c6bc8e969.setIcon(icon_12191fb23127592cb024b0b13375ce24);
+            
+    
+            var marker_d1ade190e9fa8596b34b27c8024eeb27 = L.marker(
+                [48.8687721, 2.3144686],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_3df563bfb53285bc9e87ade97da833fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9b8f3986058ae9e537b1b8e3f29b7dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a384d7f470b5dabc1726099a85283089 = $(`<div id="html_a384d7f470b5dabc1726099a85283089" style="width: 100.0%; height: 100.0%;">Marché aux Timbres</div>`)[0];
+                popup_c9b8f3986058ae9e537b1b8e3f29b7dd.setContent(html_a384d7f470b5dabc1726099a85283089);
+            
+        
+
+        marker_d1ade190e9fa8596b34b27c8024eeb27.bindPopup(popup_c9b8f3986058ae9e537b1b8e3f29b7dd)
+        ;
+
+        
+    
+    
+                marker_d1ade190e9fa8596b34b27c8024eeb27.setIcon(icon_3df563bfb53285bc9e87ade97da833fb);
+            
+    
+            var marker_b4f61df25d50ee0322747fe8d069f54e = L.marker(
+                [48.8643904, 2.3142162],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_38b21c1eff84488c53236fe0cb587a1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11b6008a40e36f0765245be2cc7add38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c22d6dd5f660ccf1878ee0068e6193e7 = $(`<div id="html_c22d6dd5f660ccf1878ee0068e6193e7" style="width: 100.0%; height: 100.0%;">nan</div>`)[0];
+                popup_11b6008a40e36f0765245be2cc7add38.setContent(html_c22d6dd5f660ccf1878ee0068e6193e7);
+            
+        
+
+        marker_b4f61df25d50ee0322747fe8d069f54e.bindPopup(popup_11b6008a40e36f0765245be2cc7add38)
+        ;
+
+        
+    
+    
+                marker_b4f61df25d50ee0322747fe8d069f54e.setIcon(icon_38b21c1eff84488c53236fe0cb587a1a);
+            
+    
+            var marker_47b4fd65eb9c35c4d29bea78e465ecd9 = L.marker(
+                [48.866105524106594, 2.313529909896315],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_542b45ec1e75083022102722ffffc452 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bba47b0249053a4c7c189053713d3d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d48f3a8c50d98a2ec87891ea90ca0b9 = $(`<div id="html_0d48f3a8c50d98a2ec87891ea90ca0b9" style="width: 100.0%; height: 100.0%;">Jardins des Champs-Élysées</div>`)[0];
+                popup_4bba47b0249053a4c7c189053713d3d7.setContent(html_0d48f3a8c50d98a2ec87891ea90ca0b9);
+            
+        
+
+        marker_47b4fd65eb9c35c4d29bea78e465ecd9.bindPopup(popup_4bba47b0249053a4c7c189053713d3d7)
+        ;
+
+        
+    
+    
+                marker_47b4fd65eb9c35c4d29bea78e465ecd9.setIcon(icon_542b45ec1e75083022102722ffffc452);
+            
+    
+            var marker_cd047e2997f1ff4471b44257c85e6d70 = L.marker(
+                [48.8654765, 2.3211306],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_1353d690914e8f78d599305c22df4f21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25142093fcf5314f2f3e00029bda73c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d8bf4382c11ec03d240920c49db0ab5 = $(`<div id="html_0d8bf4382c11ec03d240920c49db0ab5" style="width: 100.0%; height: 100.0%;">Obélisque de Louxor</div>`)[0];
+                popup_25142093fcf5314f2f3e00029bda73c2.setContent(html_0d8bf4382c11ec03d240920c49db0ab5);
+            
+        
+
+        marker_cd047e2997f1ff4471b44257c85e6d70.bindPopup(popup_25142093fcf5314f2f3e00029bda73c2)
+        ;
+
+        
+    
+    
+                marker_cd047e2997f1ff4471b44257c85e6d70.setIcon(icon_1353d690914e8f78d599305c22df4f21);
+            
+    
+            var marker_517cd20e656c1268b01d0c4b753d2606 = L.marker(
+                [48.8639781640196, 2.305825345066571],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_0e720b5be4114207b24e04a2b4ed7c09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db3e41d2dfcb2293995015c81ca26b2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea531f57186945ead9b9a0de0dd20a9f = $(`<div id="html_ea531f57186945ead9b9a0de0dd20a9f" style="width: 100.0%; height: 100.0%;">Bateaux-Mouches</div>`)[0];
+                popup_db3e41d2dfcb2293995015c81ca26b2c.setContent(html_ea531f57186945ead9b9a0de0dd20a9f);
+            
+        
+
+        marker_517cd20e656c1268b01d0c4b753d2606.bindPopup(popup_db3e41d2dfcb2293995015c81ca26b2c)
+        ;
+
+        
+    
+    
+                marker_517cd20e656c1268b01d0c4b753d2606.setIcon(icon_0e720b5be4114207b24e04a2b4ed7c09);
+            
+    
+            var marker_ce28f9dbd48f794f0aa257f6756937cd = L.marker(
+                [48.87377739317819, 2.2950372754957606],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_4264d246ac583e4e6e182c9a82b6e93d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_608cc45eb43a54a7c1577e9df048d7b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78a49d2805fa2ab3100d0b0f4483f794 = $(`<div id="html_78a49d2805fa2ab3100d0b0f4483f794" style="width: 100.0%; height: 100.0%;">Arc de Triomphe</div>`)[0];
+                popup_608cc45eb43a54a7c1577e9df048d7b6.setContent(html_78a49d2805fa2ab3100d0b0f4483f794);
+            
+        
+
+        marker_ce28f9dbd48f794f0aa257f6756937cd.bindPopup(popup_608cc45eb43a54a7c1577e9df048d7b6)
+        ;
+
+        
+    
+    
+                marker_ce28f9dbd48f794f0aa257f6756937cd.setIcon(icon_4264d246ac583e4e6e182c9a82b6e93d);
+            
+    
+            var marker_a09a17084feba2e9f9e599e5ea43a8e8 = L.marker(
+                [48.87375046676731, 2.2951329707569537],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_8c52af452728262699bf3e1459fbf278 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c8fcba9062d1cd5ddd04994f478318b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a12a292a71a6fa0bec52df92abc04e20 = $(`<div id="html_a12a292a71a6fa0bec52df92abc04e20" style="width: 100.0%; height: 100.0%;">Tombe du Soldat inconnu</div>`)[0];
+                popup_1c8fcba9062d1cd5ddd04994f478318b.setContent(html_a12a292a71a6fa0bec52df92abc04e20);
+            
+        
+
+        marker_a09a17084feba2e9f9e599e5ea43a8e8.bindPopup(popup_1c8fcba9062d1cd5ddd04994f478318b)
+        ;
+
+        
+    
+    
+                marker_a09a17084feba2e9f9e599e5ea43a8e8.setIcon(icon_8c52af452728262699bf3e1459fbf278);
+            
+    
+            var marker_bec8a9d63ed1d90a84a5206f65d18ad7 = L.marker(
+                [48.86552703942795, 2.321191457363575],
+                {
+}
+            ).addTo(map_f1b27b9c4d23075bb323c079444f73ad);
+        
+    
+            var icon_72c99d6266b11685cb2bc3bea04df62b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_874e6eeafb0c36ca7d0a9c4b8eb1e73d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_906489933483ce26524ad89294e8b3af = $(`<div id="html_906489933483ce26524ad89294e8b3af" style="width: 100.0%; height: 100.0%;">Place de la Concorde</div>`)[0];
+                popup_874e6eeafb0c36ca7d0a9c4b8eb1e73d.setContent(html_906489933483ce26524ad89294e8b3af);
+            
+        
+
+        marker_bec8a9d63ed1d90a84a5206f65d18ad7.bindPopup(popup_874e6eeafb0c36ca7d0a9c4b8eb1e73d)
+        ;
+
+        
+    
+    
+                marker_bec8a9d63ed1d90a84a5206f65d18ad7.setIcon(icon_72c99d6266b11685cb2bc3bea04df62b);
+            
+</script>
+</html>
